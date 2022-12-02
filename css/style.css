@@ -1,0 +1,152 @@
+/* fonts */
+  @font-face {
+    font-family: 'Muller';
+    src: url(../fonts/MullerRegular.woff2) format(woff2),
+      url(../fonts/MullerRegular.woff) format(woff);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Muller';
+    src: url(../fonts/MullerMedium.woff2) format(woff2),
+      url(../fonts/MullerMedium.woff) format(woff);
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Muller';
+    src: url(../fonts/MullerBold.woff2) format(woff2),
+      url(../fonts/MullerBold.woff) format(woff);
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Muller', sans-serif;
+    background-color: var(--gray-color);
+  }
+
+  :root {
+    --white-color: #fff;
+    --black-color: #333;
+    --gray-color: #E5E5E5;
+    --yellow-color: #CC9933;
+    --dark-gray: #666666;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .list-reset {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .site__heading {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--black-color);
+  }
+
+  .site__btn {
+    padding: 13px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--yellow-color);
+    border: 1px solid var(--yellow-color);
+    border-radius: 10px;
+  }
+
+  .site-link {
+    color: var(--yellow-color);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  /* header */
+
+  .header__top {
+    display: flex;
+    padding: 29px 0;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 40px;
+  }
+
+  .header__number{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--dark-gray);
+  }
+
+  .header__login {
+    background-image: url(../img/keyboard_tab.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+  }
+
+  .header__bottom {
+    display: flex;
+    padding: 7px 45px 12px 45px;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    border-radius: 15px;
+    margin-bottom: 70px;
+  }
+
+  .nav__list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  .nav__link {
+    color: var(--dark-gray);
+  }
+
+  .header__btn:first-child {
+    margin-right: 36px;
+  }
+
+  .visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+
