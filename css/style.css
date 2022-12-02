@@ -56,9 +56,11 @@
 
   .site__heading {
     font-weight: 400;
+    padding-left: 38px;
     font-size: 40px;
     line-height: 40px;
     color: var(--black-color);
+    margin: 0;
   }
 
   .site__btn {
@@ -114,11 +116,11 @@
 
   .header__bottom {
     display: flex;
-    padding: 7px 45px 12px 45px;
+    padding: 12px 45px 12px 45px;
     justify-content: space-between;
     background-color: var(--white-color);
     border-radius: 15px;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   .nav__list {
@@ -149,4 +151,55 @@
     width: 1px !important;
     overflow: hidden;
   }
+
+  .header__inner {
+    border-left: 1px solid var(--gray-color);
+    padding-left: 57px;
+  }
+
+
+  /* special */
+
+  .special-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .special-content__left,
+  .special-content__right {
+    width: 49%;
+  }
+
+  .special-article {
+    height: 97%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .special-content__left > .special-article {
+    height: 258px;
+  }
+
+  .special-content__left > .special-article:first-child {
+    margin-bottom: 23px;
+  }
+
+  .special-content__left > .special-article .special-article__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--white-color);
+  }
+
+  .special-article__price {
+    font-size: 20px;
+    color: var(--white-color);
+    opacity: 0.8;
+  }
+
+  .special-article__link {
+    background-image: url('/img/stelka.svg');
+  }
+
 
