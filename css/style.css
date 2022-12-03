@@ -39,6 +39,7 @@
   :root {
     --white-color: #fff;
     --black-color: #333;
+    --dark-black: #000;
     --gray-color: #E5E5E5;
     --yellow-color: #CC9933;
     --dark-gray: #666666;
@@ -46,6 +47,10 @@
 
   a {
     text-decoration: none;
+  }
+
+  h2, h3 {
+    margin: 0;
   }
 
   .list-reset {
@@ -161,6 +166,7 @@
   /* special */
 
   .special-content {
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
   }
@@ -171,7 +177,8 @@
   }
 
   .special-article {
-    height: 97%;
+    height: 100%;
+    border-radius: 15px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -179,6 +186,7 @@
 
   .special-content__left > .special-article {
     height: 258px;
+    padding: 40px;
   }
 
   .special-content__left > .special-article:first-child {
@@ -193,13 +201,128 @@
   }
 
   .special-article__price {
+    padding: 15px 0 44px 0;
+    display: flex;
     font-size: 20px;
     color: var(--white-color);
     opacity: 0.8;
   }
 
   .special-article__link {
-    background-image: url('/img/stelka.svg');
+    padding-right: 20px;
+    background-image: url('../img/stelka.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
   }
+
+  /* special-content__right */
+
+  .special-content__right > .special-article .special-article__title {
+    padding-top: 173px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: var(--white-color);
+  }
+
+  .special-content__right > .special-article .special-article__price {
+    font-size: 30px;
+  }
+
+  .special-content__right > .special-article {
+    padding: 40px;
+  }
+
+  /*about*/
+
+  .about {
+    padding-top: 66px;
+    padding-bottom: 56px;
+  }
+
+  .about__text {
+    max-width: 888px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: var(--dark-black);
+  }
+
+  /* services */
+
+  .services {
+    margin-bottom: 73px;
+  }
+
+  .services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .services__item {
+    width: 49%;
+    height: 330px;
+    padding: 200px 45px 50px;
+    background-color: var(--white-color);
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .services__item:nth-child(-n+2) {
+    margin-bottom: 20px;
+  }
+
+  .services__heading {
+    margin-bottom: 20px;
+  }
+
+  .services__title {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    background-image: url('../img/stelka.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 21px;
+  }
+
+  .services__descr {
+    line-height: 200%;
+  }
+
+  /* advantages */
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 24%;
+    height: 276px;
+    padding: 120px 44px 35px 45px;
+    background-color: var(--white-color);
+    background-repeat: no-repeat;
+    background-position: top left;
+    border-radius: 15px;
+  }
+
+  .advantages__item:nth-child(-n+4) {
+    margin-bottom: 20px;
+  }
+
+  .advantages__text {
+    line-height: 200%;
+  }
+
+
+
+
+
+
+
 
 
